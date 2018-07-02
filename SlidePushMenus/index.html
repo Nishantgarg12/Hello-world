@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body class="cbp-spmenu-push">
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<h3>Products</h3>
+			
+			<a href="#example1">Bot Builder</a>
+			<a href="#example2">ML Studio</a>
+			<ul>
+				<li><a href="#example3">Auto ML</a></li>
+				<li><a href="#example4">Custom ML</a></li>
+			  </ul>
+			<a href="#example5">ChatBot Studio</a>
+			<ul>
+				<li><a href="#example6">Bot Builder</a></li>
+				<li><a href="#example7">Bot Publisher</a></li>
+				<li><a href="#example8">Channels</a></li>
+			  </ul>
+
+			
+		</nav>
+<!-- heree -->
+		<div class="lightbox" id="example1">
+			<figure>
+			  <a href="#" class="close"></a>
+			  <figcaption>Nimoy suite's ChatBot studio is a "develop to deploy" package for an enterprise. ChatBot studio allows developers to build, train, and manage BOTs with simple steps. BOT studio is backed with Machine Learning & Comprehension models which augments. Chat Bots to reach true AI levels and make user conversations more intelligent.</figcaption>
+			</figure>
+		  </div>
+
+		  <div class="lightbox" id="example2">
+			<figure>
+			  <a href="#" class="close"></a>
+			  <figcaption>A User interface(UI) enabled Machine Learning platform for predictive analysis of Data. The Machine Learning Studio helps in automating core machine learning tasks involved in building data science use-cases for wide variety of industries.</figcaption>
+			</figure>
+		  </div> 
+
+		  <div class="lightbox" id="example3">
+			<figure>
+			  <a href="#" class="close"></a>
+			  <figcaption>
+				The auto pilot mode lets you build machine learning pipelines for any kind of data in an enterprise. With minimum configuration, our Auto ML is easy and intuitive to implement.</figcaption>
+			</figure>
+		  </div> 
+
+		  <div class="lightbox" id="example4">
+			<figure>
+			  <a href="#" class="close"></a>
+			  <figcaption>
+				The inbuilt studio gives you flexibility to customize the pipelines of your own if need arises such that timely interventions can be taken.</figcaption>
+			</figure>
+		  </div> 
+
+		  <div class="lightbox" id="example5">
+			<figure>
+			  <a href="#" class="close"></a>
+			  <figcaption>Nimoy suite's ChatBot studio is a "develop to deploy" package for an enterprise. ChatBot studio allows developers to build, train, and manage BOTs with simple steps. BOT studio is backed with Machine Learning & Comprehension models which augments</figcaption>
+			</figure>
+		  </div> 
+
+		  <div class="lightbox" id="example6">
+			<figure>
+			  <a href="#" class="close"></a>
+			  <figcaption>To create, train & manage BOTs.</figcaption>
+			</figure>
+		  </div> 
+
+		  <div class="lightbox" id="example7">
+			<figure>
+			  <a href="#" class="close"></a>
+			  <figcaption>Middleware for channel.</figcaption>
+			</figure>
+		  </div> 
+
+		  <div class="lightbox" id="example8">
+			<figure>
+			  <a href="#" class="close"></a>
+			  <figcaption>In-App, Web & Facebook.</figcaption>
+			</figure>
+		  </div> 
+
+		
+
+
+		
+		<div class="container">
+			<header class="clearfix">
+				<span>DASHBOARD</span>
+				<h1>Bot description</h1>
+			
+			</header>
+			<div class="main">
+				<section>
+					<h2>Slide Menus</h2>
+					<button id="showLeft">Click Here To Know About Our Product</button>
+				
+				</section>
+			
+			</div>
+		</div>
+		<script src="js/classie.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				menuTop = document.getElementById( 'cbp-spmenu-s3' ),
+				menuBottom = document.getElementById( 'cbp-spmenu-s4' ),
+				showLeft = document.getElementById( 'showLeft' ),
+				showRight = document.getElementById( 'showRight' ),
+				showTop = document.getElementById( 'showTop' ),
+				showBottom = document.getElementById( 'showBottom' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
+
+			showLeft.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeft' );
+			};
+			// showRight.onclick = function() {
+			// 	classie.toggle( this, 'active' );
+			// 	classie.toggle( menuRight, 'cbp-spmenu-open' );
+			// 	disableOther( 'showRight' );
+			// };
+			// showTop.onclick = function() {
+			// 	classie.toggle( this, 'active' );
+			// 	classie.toggle( menuTop, 'cbp-spmenu-open' );
+			// 	disableOther( 'showTop' );
+			// };
+			// showBottom.onclick = function() {
+			// 	classie.toggle( this, 'active' );
+			// 	classie.toggle( menuBottom, 'cbp-spmenu-open' );
+			// 	disableOther( 'showBottom' );
+			// };
+			// showLeftPush.onclick = function() {
+			// 	classie.toggle( this, 'active' );
+			// 	classie.toggle( body, 'cbp-spmenu-push-toright' );
+			// 	classie.toggle( menuLeft, 'cbp-spmenu-open' );
+			// 	disableOther( 'showLeftPush' );
+			// };
+			// showRightPush.onclick = function() {
+			// 	classie.toggle( this, 'active' );
+			// 	classie.toggle( body, 'cbp-spmenu-push-toleft' );
+			// 	classie.toggle( menuRight, 'cbp-spmenu-open' );
+			// 	disableOther( 'showRightPush' );
+			// };
+
+			function disableOther( button ) {
+				if( button !== 'showLeft' ) {
+					classie.toggle( showLeft, 'disabled' );
+				}
+				// if( button !== 'showRight' ) {
+				// 	classie.toggle( showRight, 'disabled' );
+				// }
+				// if( button !== 'showTop' ) {
+				// 	classie.toggle( showTop, 'disabled' );
+				// }
+				// if( button !== 'showBottom' ) {
+				// 	classie.toggle( showBottom, 'disabled' );
+				// }
+				// if( button !== 'showLeftPush' ) {
+				// 	classie.toggle( showLeftPush, 'disabled' );
+				// }
+				// if( button !== 'showRightPush' ) {
+				// 	classie.toggle( showRightPush, 'disabled' );
+				// }
+			}
+		</script>
+	</body>
+</html>
